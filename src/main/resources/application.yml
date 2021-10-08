@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    - dev
+    - prod
+    - preload
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    generate-ddl: false
+#  flyway:
+#    enabled: false
+---
+spring:
+  profiles: dev
+  jpa:
+    show-sql: true
+
+
